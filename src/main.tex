@@ -80,7 +80,7 @@
 \newcommand{\resumeSubheading}[4]{
 \vspace{0.5mm}\item
     \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
-        \textbf{#1} (\textit{\footnotesize{#2}}) \textit{\footnotesize{#3}} & \textit{\footnotesize{#4}}
+        \textbf{#1} \if\relax\detokenize{#2}\relax\else(\textit{\footnotesize{#2}}) \fi\textit{\footnotesize{#3}} & \textit{\footnotesize{#4}}
     \end{tabular*}
     \vspace{1mm}
 }
