@@ -2,7 +2,7 @@
 
 # **Siebe Kylstra** Full Stack Developer
 
-📍 Nijmegen, Netherlands | 📧 siebe.kylstra@gmail.com | 📞 +31 615871119 | 📅 31/10/1988 | 💼 siebe-kylstra | 🚗 B | 🐙 siebe88
+<small><sub>📍 Nijmegen, Netherlands | 📧 siebe.kylstra@gmail.com | 📞 +31 615871119 | 📅 31/10/1988 | 💼 siebe-kylstra | 🚗 B | 🐙 siebe88</sub></small>
 
 </div>
 
