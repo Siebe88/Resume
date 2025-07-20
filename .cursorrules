@@ -65,6 +65,8 @@ This is a professional resume project with the primary objective of showcasing w
 - Use consistent formatting and spacing
 - Keep build process clean with proper `.gitignore`
 - Ensure cross-platform compatibility
+- Use centralized constants in `src/constants.tex` for spacing and formatting
+- Apply spacing constants consistently across all sections
 
 ### Version Control
 
@@ -79,6 +81,8 @@ This is a professional resume project with the primary objective of showcasing w
 - Test LaTeX compilation after changes
 - Review PDF output for formatting consistency
 - Update relevant sections when adding new experience
+- Modify spacing by editing `src/constants.tex` for global formatting changes
+- Use predefined spacing values (`\tightSpacing`, `\normalSpacing`, `\looseSpacing`) for quick adjustments
 
 ## Target Audience
 
