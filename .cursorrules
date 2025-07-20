@@ -1,0 +1,88 @@
+# Professional Resume Project
+
+## Project Goal
+
+This is a professional resume project with the primary objective of showcasing work experience, skills, and achievements in a clear, compelling format suitable for job applications.
+
+## Core Principles
+
+### Experience-Focused
+
+- Prioritize work experience and achievements over other sections
+- Emphasize quantifiable results and impact
+- Highlight progression and growth in career
+- Focus on relevant technical skills and tools used
+
+### Professional Standards
+
+- Maintain clean, professional formatting
+- Use consistent terminology and industry-standard language
+- Ensure accuracy and truthfulness in all content
+- Keep content concise and impactful
+
+### Modular Structure
+
+- Use the existing modular LaTeX structure with separate files for each section
+- Maintain organization in `src/` directory with subdirectories for each section
+- Keep build artifacts in `build/` directory
+- Preserve clean root directory structure
+
+## Content Guidelines
+
+### Experience Section
+
+- Lead with most recent and relevant experience
+- Include company name, location, dates, and role
+- Focus on achievements and impact, not just responsibilities
+- Use action verbs and quantifiable metrics
+- Highlight technical skills and tools used
+
+### Projects Section
+
+- Showcase technical projects that demonstrate skills
+- Include technologies used and outcomes achieved
+- Emphasize full-stack development and modern technologies
+- Highlight both individual and team contributions
+
+### Skills Section
+
+- Organize by relevant categories (Full Stack, BI, DevOps, etc.)
+- Include both technical and soft skills
+- Keep current with industry trends
+- Prioritize skills relevant to target roles
+
+### Education Section
+
+- Keep concise and relevant
+- Highlight certifications and specialized training
+- Emphasize practical, hands-on learning
+
+## Technical Guidelines
+
+### LaTeX Structure
+
+- Maintain modular `.tex` files for easy editing
+- Use consistent formatting and spacing
+- Keep build process clean with proper `.gitignore`
+- Ensure cross-platform compatibility
+
+### Version Control
+
+- Use descriptive commit messages
+- Keep build artifacts out of version control
+- Maintain clean project structure
+- Document significant changes
+
+## Development Workflow
+
+- Edit individual section files for targeted updates
+- Test LaTeX compilation after changes
+- Review PDF output for formatting consistency
+- Update relevant sections when adding new experience
+
+## Target Audience
+
+- Technical recruiters and hiring managers
+- Focus on roles in full-stack development, business intelligence, and DevOps
+- Emphasize both technical skills and business impact
+- Demonstrate progression from BI to modern web development
