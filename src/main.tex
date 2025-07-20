@@ -11,9 +11,24 @@
 \usepackage{xcolor}
 \usepackage{hyperref}
 
-\geometry{margin=0.5in}
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{0pt}
+% Spacing constants for easy adjustment
+\newcommand{\sectionTitleSpacing}{0.02cm}
+\newcommand{\sectionSeparatorSpacing}{0.05cm}
+\newcommand{\skillsTitleSpacing}{0.03cm}
+\newcommand{\headerSpacing}{0.15cm}
+\newcommand{\headerRuleSpacing}{0.02cm}
+\newcommand{\pageMargin}{0.5in}
+\newcommand{\paragraphIndent}{0pt}
+\newcommand{\paragraphSkip}{0pt}
+\newcommand{\ruleThickness}{0.4pt}
+
+\geometry{margin=\pageMargin}
+\setlength{\parindent}{\paragraphIndent}
+\setlength{\parskip}{\paragraphSkip}
+\setlength{\parsep}{0pt}
+\setlength{\itemsep}{0pt}
+\setlength{\topsep}{0pt}
+\setlength{\partopsep}{0pt}
 
 \definecolor{linkcolor}{RGB}{0,0,0}
 \hypersetup{
