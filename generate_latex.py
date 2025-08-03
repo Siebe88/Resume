@@ -91,8 +91,8 @@ def generate_skill_files(data, output_dir):
         
         # Escape & characters for LaTeX
         category_name = category['name'].replace('&', '\\&')
-        latex_content = f"""\\textbf{{{category_name}:}} {', '.join(category['skills'])}
-"""
+        skills_with_bars = ' | '.join(category['skills'])
+        latex_content = f"""\\textbf{{{category_name}:}} {skills_with_bars}"""
         
         with open(filepath, 'w', encoding='utf-8') as f:
             f.write(latex_content)
@@ -178,11 +178,21 @@ def generate_section_files(data_dir, src_dir):
         
         skills_content = """%-----------SKILLS-----------------
 \\section{\\textbf{Technical Skills}}
+\\begin{tabular*}{\\textwidth}{@{\\extracolsep{\\fill}}p{0.23\\textwidth}p{0.23\\textwidth}p{0.23\\textwidth}p{0.23\\textwidth}@{}}
 """
-        for skill in visible_skills:
-            skills_content += f"\\input{{skills/{skill['id']}}}\n"
         
-        skills_content += """\\vspace{\\skillsEndSpacing}"""
+        # Put each skill category in its own column
+        row_content = []
+        for skill in visible_skills:
+            row_content.append(f"\\input{{skills/{skill['id']}}}")
+        
+        # Pad with empty cells if needed
+        while len(row_content) < 4:
+            row_content.append("")
+        
+        skills_content += " & ".join(row_content) + " \\\\\n"
+        skills_content += """\\end{tabular*}
+\\vspace{\\skillsEndSpacing}"""
         
         with open(src_dir / "skills.tex", 'w', encoding='utf-8') as f:
             f.write(skills_content)
