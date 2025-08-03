@@ -31,27 +31,35 @@ def generate_skills_section(data, output_dir):
     output_dir = Path(output_dir)
     visible_skills = [skill for skill in data['skillCategories'] if skill.get('show') != False]
     
-    skills_content = """%-----------SKILLS-----------------
-\\section{\\textbf{Technical Skills}}
-\\begin{tabular}{llll}
+    # Calculate column width based on number of visible skills
+    num_skills = len(visible_skills)
+    if num_skills == 0:
+        return
+    
+    # Calculate width per column (leave some margin)
+    column_width = 0.95 / num_skills  # 95% of textwidth divided by number of columns
+    
+    # Create dynamic column specification
+    column_spec = ''.join([f'p{{{column_width:.3f}\\textwidth}}' for _ in range(num_skills)])
+    
+    skills_content = f"""%-----------SKILLS-----------------
+\\section{{\\textbf{{Technical Skills}}}}
+\\begin{{tabular}}{{{column_spec}}}
 """
     
+    # First row: category names
     header_row = []
     for skill in visible_skills:
         skill_name = skill['name'].replace('&', '\\&')
         header_row.append(f"\\textbf{{{skill_name}}}")
     
-    while len(header_row) < 4:
-        header_row.append("")
-    
     skills_content += " & ".join(header_row) + " \\\\\n"
     
+    # Second row: skills
     skills_row = []
     for skill in visible_skills:
-        skills_row.append(', '.join(skill['skills']))
-    
-    while len(skills_row) < 4:
-        skills_row.append("")
+        skills_text = ', '.join(skill['skills'])
+        skills_row.append(skills_text)
     
     skills_content += " & ".join(skills_row) + " \\\\\n"
     
