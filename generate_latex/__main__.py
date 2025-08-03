@@ -4,7 +4,7 @@ Generate LaTeX files from JSON data for the resume project.
 This script separates data from structure, making it easier to maintain.
 """
 
-from generate_latex.generator import generate_all
+from .generator import generate_all
 
 
 def main():
