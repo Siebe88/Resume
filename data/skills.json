@@ -1,0 +1,59 @@
+{
+  "skillCategories": [
+    {
+      "id": "fullstack",
+      "name": "Full Stack Development",
+      "show": true,
+      "skills": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "JavaScript",
+        "Node.js",
+        "NestJS",
+        "HTML5",
+        "CSS3",
+        "SASS",
+        "Tailwind CSS",
+        "REST APIs",
+        "GraphQL"
+      ]
+    },
+    {
+      "id": "bi",
+      "name": "Business Intelligence",
+      "show": true,
+      "skills": [
+        "Power BI",
+        "SQL Server",
+        "SSIS",
+        "SSRS",
+        "ETL",
+        "Data Modeling",
+        "Data Warehousing",
+        "DAX",
+        "M Query",
+        "Azure Data Factory"
+      ]
+    },
+    {
+      "id": "devops",
+      "name": "DevOps & Cloud",
+      "show": true,
+      "skills": ["AWS", "Docker", "Git", "CI/CD", "Linux", "Nginx", "PostgreSQL", "MongoDB", "Redis", "Kubernetes"]
+    },
+    {
+      "id": "teamwork",
+      "name": "Soft Skills",
+      "show": true,
+      "skills": [
+        "Agile/Scrum",
+        "Client Communication",
+        "Project Management",
+        "Technical Leadership",
+        "Problem Solving",
+        "Team Collaboration"
+      ]
+    }
+  ]
+}

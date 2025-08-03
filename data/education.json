@@ -1,0 +1,22 @@
+{
+  "education": [
+    {
+      "id": "codeworks",
+      "institution": "Codeworks",
+      "location": "Barcelona",
+      "degree": "Full Stack Web Development",
+      "period": "2021",
+      "show": true,
+      "description": "Intensive 12-week bootcamp covering modern web development technologies"
+    },
+    {
+      "id": "erasmus",
+      "institution": "Erasmus University Rotterdam",
+      "location": "Rotterdam",
+      "degree": "Bachelor of Science in Business Administration",
+      "period": "2014 - 2017",
+      "show": true,
+      "description": "Specialized in Information Management and Business Analytics"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  resume-generator:
+    build: .
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    command: >
+      sh -c "
+        python generate_latex.py &&
+        pdflatex -output-directory=build src/main.tex &&
+        pdflatex -output-directory=build src/main.tex
+      "
+    environment:
+      - PYTHONUNBUFFERED=1

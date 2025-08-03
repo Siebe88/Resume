@@ -1,0 +1,70 @@
+{
+  "experiences": [
+    {
+      "id": "10kb",
+      "company": "10kb",
+      "location": "Nijmegen",
+      "title": "Fullstack Developer",
+      "period": "2022 - Present",
+      "show": true,
+      "items": [
+        "Lead end-to-end development of backend, frontend, and fullstack projects for diverse clients",
+        "Design, build, and deploy scalable cloud solutions on AWS, tailored to client needs",
+        "Manage client communications and project delivery, ensuring high satisfaction and successful outcomes"
+      ]
+    },
+    {
+      "id": "performation",
+      "company": "Performation",
+      "location": "Bilthoven",
+      "title": "Business Intelligence Developer",
+      "period": "2019 - 2022",
+      "show": true,
+      "items": [
+        "Part of the DevOps team responsible for deploying standardized data products to 32 hospitals",
+        "Introduced dashboards that monitored the ETL process, reducing the load-time from 10 to 8 hours",
+        "Optimized the update process, which resulted in a 75% improvement in time spent per hospital",
+        "Integrated the extraction of Afas - Online data for 3 Hospitals using PowerShell and SSIS"
+      ]
+    },
+    {
+      "id": "ilionx",
+      "company": "Ilionx",
+      "location": "Utrecht",
+      "title": "Business Intelligence Developer",
+      "period": "2018 - 2019",
+      "show": true,
+      "items": [
+        "Developed and maintained ETL processes using SQL Server Integration Services (SSIS)",
+        "Created interactive dashboards and reports using Power BI and SQL Server Reporting Services",
+        "Collaborated with stakeholders to gather requirements and deliver data solutions"
+      ]
+    },
+    {
+      "id": "axians",
+      "company": "Axians",
+      "location": "Amsterdam",
+      "title": "Business Intelligence Consultant",
+      "period": "2017 - 2018",
+      "show": true,
+      "items": [
+        "Implemented data warehouse solutions for healthcare clients",
+        "Developed ETL processes and data models using Microsoft BI stack",
+        "Provided technical consulting and training to client teams"
+      ]
+    },
+    {
+      "id": "helperduck",
+      "company": "HelperDuck",
+      "location": "Remote",
+      "title": "Freelance Developer",
+      "period": "2021 - 2022",
+      "show": false,
+      "items": [
+        "Developed custom web applications using modern JavaScript frameworks",
+        "Built responsive frontend interfaces and RESTful APIs",
+        "Collaborated with clients to deliver tailored software solutions"
+      ]
+    }
+  ]
+}

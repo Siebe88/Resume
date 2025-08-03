@@ -1,0 +1,2 @@
+# No external dependencies required for the current script
+# This file is kept for future extensibility 
